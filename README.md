@@ -40,6 +40,19 @@ HHMI/Janelia Research Campus.
 I build using Qt 5.12.0 (MinGW 64-bit). Compiled components include
 supporting DLLs from that Qt version.
 
+### Building in Linux
+
+**Must have Qt5!** 
+
+Necessary changes made to relevant files for build to succeed.
+
+```python
+cd Build
+
+qmake
+make
+```
+
 ### Licensing
 
 Use is subject to Janelia Research Campus Software Copyright 1.2 license terms:
