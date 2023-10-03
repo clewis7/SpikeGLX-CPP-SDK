@@ -88,11 +88,12 @@ static inline void DO_STARTUP()
 #include <errno.h>
 #include <sys/select.h>
 #include <sys/ioctl.h>
+#include <unistd.h>
 
 #define DO_STARTUP()                do { } while(0)
 #define CLOSE( x )                  ::close( x )
 #define IOCTL( x, y, z )            ::ioctl( x, y, z )
-#define LASTERROR_STR()             std::strerror( errno )
+#define LASTERROR_STR( x )             std::strerror( errno )
 #define LASTERROR_IS_CONNCLOSED()   \
     (errno == ECONNRESET || errno == ENOTCONN || errno == EPIPE)
 

@@ -8,7 +8,7 @@ QT -= gui
 
 TARGET = SglxApi
 TEMPLATE = lib
-DESTDIR = C:/Users/labadmin/Desktop/SGLBUILD/FIXU/SpikeGLX-CPP-SDK/API
+DESTDIR = build
 
 DEFINES += SGLXAPI_LIBRARY
 

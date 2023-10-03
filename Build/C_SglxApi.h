@@ -7,6 +7,7 @@
 
 #include <stdbool.h>
 
+#ifdef WIN32
 #if defined(SGLXAPI_LIBRARY)
 #  define SGLX_EXPORT __declspec(dllexport)
 #else
@@ -14,6 +15,14 @@
 #endif
 
 #define SGLX_CALL   __stdcall
+
+
+#else
+
+#define SGLX_EXPORT
+#define SGLX_CALL
+
+#endif
 
 #ifdef __cplusplus
 extern "C" {
